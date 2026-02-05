@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { FortuneWheel } from '../components';
+import { SpinDrum } from '../components';
 import { useStore } from '../store/useStore';
 import type { Restaurant } from '../types';
 
@@ -51,9 +51,9 @@ export function HomePage() {
         </p>
       </div>
 
-      {/* Wheel or empty state */}
+      {/* Drum or empty state */}
       {filteredRestaurants.length > 0 ? (
-        <FortuneWheel
+        <SpinDrum
           restaurants={filteredRestaurants}
           onSpinEnd={handleSpinEnd}
           isSpinning={isSpinning}
