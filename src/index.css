@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ios-bg: #F5F5F7;
+  --color-card-dark: #1C1C1E;
+  --color-accent-start: #FF6B6B;
+  --color-accent-end: #FF8E53;
+  --color-success: #10B981;
+  --font-family-sans: 'Inter', 'SF Pro Display', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  font-family: var(--font-family-sans);
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1C1C1E;
+  background-color: #F5F5F7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #F5F5F7;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dot-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
